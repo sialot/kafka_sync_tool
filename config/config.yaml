@@ -1,0 +1,19 @@
+log_path: /var/log/go_sync_log
+group_id: golang_test
+source:
+  brokers:
+    - 192.168.16.1:9092
+    - 192.168.16.2:9092
+    - 192.168.16.3:9092
+  sasluser: test
+  saslpassword: test
+target:
+  brokers:
+    - 192.168.16.4:9092
+    - 192.168.16.5:9092
+    - 192.168.16.6:9092
+  sasluser: test
+  saslpassword: test
+topics:
+    - demo_topic_1
+    - demo_topic_2
